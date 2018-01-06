@@ -1,0 +1,32 @@
+{
+  "name": "mean-me",
+  "version": "1.0.0",
+  "description": "MEAN stack application with MySQL",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nedrizv/mean-me.git"
+  },
+  "keywords": [
+    "MEAN",
+    "Stack",
+    "application",
+    "with",
+    "MySQL"
+  ],
+  "author": "Sayed Naweed Rizvi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nedrizv/mean-me/issues"
+  },
+  "homepage": "https://github.com/nedrizv/mean-me#readme",
+  "dependencies": {
+    "express": "^4.16.2",
+    "mysql": "^2.15.0",
+    "promise": "^8.0.1"
+  }
+}
