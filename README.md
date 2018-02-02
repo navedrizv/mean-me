@@ -25,3 +25,12 @@ app.use(bodyParser.urlencoded({ extended: false })); // parse application/x-www-
 app.use(bodyParser.json()); // parse application/json
 
 Above statements need to included in index.js file to allow parsing of request.
+=======
+# MEAN Application (MySQL-Express-Angular-Node)
+For developer coming from LAMP (Linux-Apache-MySql-Php) backgroud.
+<br><br>
+Client : Angular 4, bootstrap (for css/js/layout)<br>
+Server : Node, Express<br>
+Middleware: Passport<br>
+Database: Mysql<b>
+
