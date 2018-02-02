@@ -11,6 +11,7 @@ import { AuthService } from './services/auth.service';
 import { RouterModule, Routes } from '@angular/router';
 import { HeaderComponent } from './header/header.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { ProfileComponent } from './profile/profile.component';
 
 
 const routes: Routes = [
@@ -28,6 +29,9 @@ const routes: Routes = [
   },{
     path: 'register',
     component: RegisterComponent
+  },{  
+    path: 'profile',
+    component: ProfileComponent
   }
 ];
 
@@ -37,7 +41,8 @@ const routes: Routes = [
     LoginComponent,
     RegisterComponent,
     HeaderComponent,
-    DashboardComponent
+    DashboardComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,

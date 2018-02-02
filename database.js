@@ -3,6 +3,8 @@ const config = require('./config');
 
 const db = mysql.createConnection(config);
 
+
+
 // Check connection
 db.connect((err) => {
     if (err) {

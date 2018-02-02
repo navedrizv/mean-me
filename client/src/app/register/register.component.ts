@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { AuthService } from '../services/auth.service';
-// import { Router } from '@angular/router';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-register',
@@ -16,8 +16,8 @@ export class RegisterComponent implements OnInit {
   messageClass: string;
 
   constructor(
-    private auth: AuthService
-    // private router : Router
+    private auth: AuthService,
+    private router : Router
   ) {
     this.registerForm = new FormGroup({
       username: new FormControl("", [
@@ -58,9 +58,9 @@ export class RegisterComponent implements OnInit {
           this.messageClass = 'alert alert-success'; // Set a success class
           this.message = data.message;
           
-          // setTimeout(() => {
-          //   this.router.navigate(['/login']); // Redirect to login view
-          // }, 2000);
+          setTimeout(() => {
+            this.router.navigate(['/login']); // Redirect to login view
+          }, 2000);
         } else {
           this.messageClass = 'alert alert-danger'; // Set a success class
           this.message = data.message;
@@ -86,20 +86,13 @@ export class RegisterComponent implements OnInit {
 
 
   checkUsername() {
-    console.log('blur event called');
-    // check if it is a valid username
-
-    // check if the username doesn't exist in db already
-
     this.auth.checkUsername(this.registerForm.get('username').value)
       .subscribe(
       data => {
         console.log(data);
-
         // if (data.success) {
         //   console.log(data.message);
         // }
-      }
-      );
+      });
   }
 }
