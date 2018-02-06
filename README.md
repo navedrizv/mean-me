@@ -1,19 +1,14 @@
-# Simple Login Application built on MEAN stack (MySQL-Express-Angular-Node)
+=======
+# MEAN Application (MySQL-Express-Angular-Node)
 For developer coming from LAMP (Linux-Apache-MySql-Php) backgroud.
+<br><br>
+Client : Angular 4, bootstrap <br>
+Server : Node, Express<br>
+Middleware: Session, JWT, Passport<br>
+Database: MySql<b>
 
-Client
-Angular 4
-bootstrap (for css/js/layout)
-
-Server
-Node
-Express
-
-Middleware
-Passport
-
-Database
-Mysql
+Authentication
+Password is hashed with and stored in the database.
 
 
 Note :
@@ -25,12 +20,5 @@ app.use(bodyParser.urlencoded({ extended: false })); // parse application/x-www-
 app.use(bodyParser.json()); // parse application/json
 
 Above statements need to included in index.js file to allow parsing of request.
-=======
-# MEAN Application (MySQL-Express-Angular-Node)
-For developer coming from LAMP (Linux-Apache-MySql-Php) backgroud.
-<br><br>
-Client : Angular 4, bootstrap (for css/js/layout)<br>
-Server : Node, Express<br>
-Middleware: Passport<br>
-Database: Mysql<b>
+
 
